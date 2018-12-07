@@ -1,5 +1,39 @@
 # BehanceSoul
 
+## Estrutura
+- Header
+| - HeaderLogo
+| - HeaderDiscoverMenu
+| - HeaderUserMenu
+- Content
+- FooterSnapped
+
+## Content (Home)
+- Header
+- Content
+| - Herobanner
+| - Portfolio
+| --- PortfolioFilterMenu
+| --- PortfolioGallery
+
+## Content (Item)
+- Header
+- Content
+| - ItemShowcase
+| --- ShowcasePortfolio
+| --- ShowcaseInteraction
+| --- ShowcaseProfileInfo
+| --- ShowcaseCommentSection
+| --- ShowcaseCredits
+| - ItemDetails
+| --- SideDetailsUserProfile
+| --- SideDetailsSocial
+- Footer
+| - FooterLogo
+| - FooterLinks
+| - FooterSocialLinks
+| - FooterUtilityLinks
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
 
 ## Development server

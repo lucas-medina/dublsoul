@@ -9,7 +9,7 @@
   &__logo {
     @extend %text-fancy;
     @extend %text-transition;
-    @include whiteHover(color, $colorLightGrey1);
+    @include darkenHover(#fff, 10%, color);
     font-size: 1.5rem;
     display: inline-block;
     line-height: .8;

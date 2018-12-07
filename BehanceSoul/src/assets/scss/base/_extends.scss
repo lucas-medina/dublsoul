@@ -17,10 +17,10 @@
     #{$property}: $colorWhite;
   }
 }
-@mixin darkenHover($color, $percentage) {
-  background-color: $color;
+@mixin darkenHover($color, $percentage, $property: background-color) {
+  #{$property}: $color;
   &:hover {
-    background-color: darken($color, ($percentage * 1%));
+    #{$property}: darken($color, ($percentage * 1%));
   }
 }
 

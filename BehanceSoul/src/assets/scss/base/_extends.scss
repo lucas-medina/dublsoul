@@ -1,3 +1,6 @@
+@import './variables';
+
+// Text
 %text-fancy {
   font-family: Bungee, cursive;
 }
@@ -7,10 +10,34 @@
 %text-transition {
   transition: .15s ease;
 }
-%text-white-hover {
-  @extend %text-transition;
-  color: $colorWhite;
+
+@mixin whiteHover($property, $color) {
+  #{$property}: $color;
   &:hover {
-    color: darken($colorWhite, 5%);
+    #{$property}: $colorWhite;
   }
+}
+@mixin darkenHover($color, $percentage) {
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, ($percentage * 1%));
+  }
+}
+
+// Box
+%flex-center {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+// Elements
+%button {
+  border: none;
+  box-shadow: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
 }

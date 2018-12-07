@@ -1,0 +1,22 @@
+@import '../../../assets/scss/base/variables';
+@import '../../../assets/scss/base/extends';
+
+.discoverymenu {
+  @extend %flex-center;
+  &__links {
+    padding-right: .66rem;
+  }
+  &__link {
+    @extend %text-normal;
+    @extend %text-transition;
+    font-size: .9rem;
+    padding: .66em;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: $colorLightGrey1;
+    &:hover {
+      color: $colorWhite;
+    }
+  }
+}

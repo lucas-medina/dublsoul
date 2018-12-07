@@ -1,0 +1,16 @@
+%text-fancy {
+  font-family: Bungee, cursive;
+}
+%text-normal {
+  font-family: Lato, sans-serif;
+}
+%text-transition {
+  transition: .15s ease;
+}
+%text-white-hover {
+  @extend %text-transition;
+  color: $colorWhite;
+  &:hover {
+    color: darken($colorWhite, 5%);
+  }
+}

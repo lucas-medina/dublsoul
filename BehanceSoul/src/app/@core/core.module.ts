@@ -1,3 +1,5 @@
+import { HeaderSignupBlockComponent } from './../components/header-signup-block/header-signup-block.component';
+import { RouterModule } from '@angular/router';
 import { HeaderUserMenuComponent } from './../components/header-user-menu/header-user-menu.component';
 import { HeaderDiscoveryMenuComponent } from './../components/header-discovery-menu/header-discovery-menu.component';
 import { HeaderLogoComponent } from './../components/header-logo/header-logo.component';
@@ -8,18 +10,23 @@ import { HomeTemplateComponent } from './components/home-template/home-template.
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     HeaderComponent,
     HeaderLogoComponent,
     HeaderDiscoveryMenuComponent,
     HeaderUserMenuComponent,
+    HeaderSignupBlockComponent,
     HomeTemplateComponent
   ],
   exports: [
     HeaderComponent,
     HeaderLogoComponent,
+    HeaderDiscoveryMenuComponent,
+    HeaderUserMenuComponent,
+    HeaderSignupBlockComponent,
     HomeTemplateComponent,
     CommonModule
   ]

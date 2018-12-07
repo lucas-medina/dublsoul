@@ -1,0 +1,16 @@
+@import '../../../assets/scss/base/variables';
+@import '../../../assets/scss/base/extends';
+
+.headerlogo {
+  &__link {
+    display: inline-block;
+    padding: .5rem 0;
+  }
+  &__logo {
+    @extend %text-fancy;
+    @extend %text-white-hover;
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: .8;
+  }
+}

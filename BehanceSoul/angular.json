@@ -29,7 +29,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles.scss"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -65,7 +70,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "BehanceSoul:build:production"
+              "browserTarget": "BehanceSoul:build:production",
+              "sourceMap": false
             }
           }
         },

@@ -1,3 +1,4 @@
+import { HerobannerComponent } from './../../components/herobanner/herobanner.component';
 import { CoreModule } from './../../@core/core.module';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes), CoreModule],
   exports: [RouterModule],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HerobannerComponent
   ],
   providers: []
 })

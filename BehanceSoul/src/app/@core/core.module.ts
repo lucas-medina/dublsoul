@@ -1,12 +1,13 @@
-import { HeaderSignupBlockComponent } from './../components/header-signup-block/header-signup-block.component';
-import { RouterModule } from '@angular/router';
-import { HeaderUserMenuComponent } from './../components/header-user-menu/header-user-menu.component';
-import { HeaderDiscoveryMenuComponent } from './../components/header-discovery-menu/header-discovery-menu.component';
-import { HeaderLogoComponent } from './../components/header-logo/header-logo.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { HeaderDiscoveryMenuComponent } from './../components/header-discovery-menu/header-discovery-menu.component';
+import { HeaderLogoComponent } from './../components/header-logo/header-logo.component';
+import { HeaderSignupBlockComponent } from './../components/header-signup-block/header-signup-block.component';
+import { HeaderUserMenuComponent } from './../components/header-user-menu/header-user-menu.component';
 import { HeaderComponent } from './../components/header/header.component';
 import { HomeTemplateComponent } from './components/home-template/home-template.component';
+import { HerobannerDirective } from './directives/herobanner.directive';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { HomeTemplateComponent } from './components/home-template/home-template.
     HeaderDiscoveryMenuComponent,
     HeaderUserMenuComponent,
     HeaderSignupBlockComponent,
-    HomeTemplateComponent
+    HomeTemplateComponent,
+    HerobannerDirective
   ],
   exports: [
     HeaderComponent,

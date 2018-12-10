@@ -1,0 +1,40 @@
+@import '../../../assets/scss/base/extends';
+
+.herobanner {
+  position: relative;
+  width: 100%;
+  &__content {
+    @extend %text-fancy;
+    color: $colorWhite;
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-size: 54px;
+    text-align: center;
+    text-shadow: 0 2px 3px rgba(0,0,0,.1);
+    z-index: 11;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__media {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 6vh 55px 52px rgba(140, 12, 12, 0.5);
+    }
+    img {
+      width: 100%;
+      filter: contrast(1.2) brightness(0.7);
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+%header {
+  &__link {
+    @extend %text-normal;
+    @extend %base-transition;
+    @include whiteHover(color, $colorLightGrey1);
+    font-weight: bold;
+    font-size: .933rem;
+    padding: 0.66em .75em;
+    display: inline-block;
+    text-decoration: none;
+  }
+}

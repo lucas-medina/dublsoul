@@ -4,7 +4,7 @@
 .signup-block {
   @extend %flex-center;
   &__link {
-    @extend %text-transition;
+    @extend %base-transition;
     @extend %text-normal;
     @extend %button;
     color: $colorWhite;
@@ -28,7 +28,7 @@
   }
   &__soclink {
     @extend %button;
-    @extend %text-transition;
+    @extend %base-transition;
     font-size: 1rem;
     border-radius: 50%;
     padding: .5em;

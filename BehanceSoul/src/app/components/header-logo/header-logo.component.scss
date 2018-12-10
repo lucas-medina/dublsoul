@@ -8,7 +8,7 @@
   }
   &__logo {
     @extend %text-fancy;
-    @extend %text-transition;
+    @extend %base-transition;
     @include darkenHover(#fff, 10%, color);
     font-size: 1.5rem;
     display: inline-block;
